@@ -31,7 +31,7 @@
   <!-- Main section -->
   <main>
     <section>
-      <div class="bg-gradient-to-r from-purple-500 to-pink-500 w-full h-32 lg:h-48 shadow-xl mt-2 ">
+      <div class="bg-gradient-to-r from-gray-800 to-green-500 w-full h-32 lg:h-48 shadow-xl mt-2 ">
         <h1 class="text-2xl md:text-4xl lg:text-4xl  text-center text-white mx-auto py-8 font-bold hover:text-gray-900">
           Quiz Hero Blog</h1>
       </div>
@@ -44,7 +44,8 @@
           
           <div class="card-body">
             <h2 class="card-title">Question-1 : What Is the difference between map,forEach,filter and find?</h2>
-            <p> Difference Between map,forEach,filter and find are-<br>
+            <p> <strong>Answer:</strong> <br>
+               Difference Between map,forEach,filter and find are-<br>
                 <strong>Map():</strong> When the specified callback to map is finished, the elements of the original array are modified and saved into the new array, and the original array is then returned as the mapped array.<br>
                 <strong>forEach():</strong>Foreach accepts a callback function and executes it on each individual array element.<br>
                   <strong>filter():</strong>ForEach and filter differ primarily in that forEach just loops through the array and executes the callback, whereas filter executes the callback and checks the return value.<br>
@@ -61,7 +62,7 @@
           
             <div class="card-body">
               <h2 class="card-title">Question-2 : What is difference between local storage and session storage?</h2>
-              Answer: The difference between local storage and session storage is-<br>
+              <strong>Answer:</strong> The difference between local storage and session storage is-<br>
               1. Local storage stored data in browser without any expiration date. Session storage data in browser with expire.<br>
               2. In local storage data is not deleted when the browser is closed. In session storage is deleted when the browser is closed.<br>
               3.In local storage data is available for future sessions. In session storage, data is not available for future session.
@@ -76,7 +77,8 @@
           
           <div class="card-body">
             <h2 class="card-title">Question-3 : What Is event-loop?</h2>
-            <p> Event-loop is -The event loop in JavaScript is a technique for moving the calls in the callback queue that are waiting to be executed to the call stack. The call stack must be empty in order for any event from the callback queue to arrive there.
+            <p> <strong>Answer:</strong> <br>
+              Event-loop is -The event loop in JavaScript is a technique for moving the calls in the callback queue that are waiting to be executed to the call stack. The call stack must be empty in order for any event from the callback queue to arrive there.
 
             </p>
             
@@ -86,19 +88,21 @@
         <div class="card w-full bg-base-100 shadow-xl  lg:mx-12">
           
           <div class="card-body">
-            <h2 class="card-title">Question-3 : What Is event-loop?</h2>
-            <p> Event-loop is -The event loop in JavaScript is a technique for moving the calls in the callback queue that are waiting to be executed to the call stack. The call stack must be empty in order for any event from the callback queue to arrive there.
-
+            <h2 class="card-title">Question-4 : How does quizTimer() function work?</h2>
+            <p> <strong>Answer:</strong> <br>
+              The quizTimer function is used to handle the timer of the quiz. It also used the setInterval() method continues calling the quiz timer function until clearInterval() is called. In the setInterval() method take a variable called count HTML with getting the id with querySelector and calculate the minute and second. Then it will store in count HTML's using the inner HTML. Its time interval is 1000 milliseconds
             </p>
             
           </div>
         </div>
         <!-- Fifth Question -->
-      <div class="card w-full bg-base-100 shadow-xl  lg:mx-12">
+      <div class="card w-full bg-base-100 shadow-xl  lg:mx-12 mb-2">
           
-          <div class="card-body">
-            <h2 class="card-title">Question-3 : What Is event-loop?</h2>
-            <p> Event-loop is -The event loop in JavaScript is a technique for moving the calls in the callback queue that are waiting to be executed to the call stack. The call stack must be empty in order for any event from the callback queue to arrive there.
+          <div class="card-body ">
+            <h2 class="card-title pb-4">Question-5:How does The chooseQuiz() work?</h2>
+            <p><strong>Answer:</strong> <br>
+              The chooseQuiz function has 2 parameters which are called index and given. Declare a Constant variable called isExist where users find a function which checks the answer id and whether the quiz data-id is equal or not. Then it takes an if else condition where if isExist is true then enters in the for of loop when it will take an answer then break the condition and again repeat the process. Otherwise push the answer to the quizData.
+              At last call the displayAnswers() function to display the answer. 
 
             </p>
             
@@ -109,6 +113,11 @@
 
     </section>
   </main>
+  <!-- Footer section start -->
+  <footer class="py-10 text-center text-sm">
+    Copyright © 2023 Quiz Hero All Rights Reserved.
+  </footer>
+  <!-- Footer section end -->
    <script>
     document.querySelector('#redirect-1').addEventListener('click',()=>{
             window.location.href="index.html";
